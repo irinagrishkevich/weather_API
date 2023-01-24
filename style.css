@@ -1,0 +1,63 @@
+body{
+    background: url(thunderstorm-g0746a617e_1920.jpg);
+    background-clip: content-box;
+    background-origin: inherit;
+    color: white;
+  }
+#spinner:not([hidden]) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #spinner::after {
+    content: "";
+    width: 80px;
+    height: 80px;
+    border: 2px solid #f3f3f3;
+    border-top: 3px solid #f25a41;
+    border-radius: 100%;
+    will-change: transform;
+    animation: spin 1s infinite linear
+  }
+
+  input{
+    margin-top: 20px;
+  }
+  #town{
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 49px;
+    text-align: center;
+  }
+  hr{
+    flex-direction: row;
+    border:none;
+    background-color: red; 
+    color: red; 
+    height: 2px;
+  }
+  .wind-weather{
+
+  }
+  section{
+    margin: 40px 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  .header{
+    display: block;
+  }
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
